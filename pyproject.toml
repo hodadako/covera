@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "covera"
+version = "0.1.0"
+description = "Resumable local AI cover pipeline"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = []
+
+[project.scripts]
+aicover = "aicover.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["aicover*"]
